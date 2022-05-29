@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Sabre de Luz</title>
+</head>
+
+<body>
+    <section class="Cores-Sabres">
+        <div class="area-opt">
+            <label onclick="trocaSabre('azul')">Mestre Kenobi
+            <input checked type="radio" name="cor-do-sabre" id="Obi-wan" value="azul" /></label>
+        </div>
+
+        <div class="area-opt">
+            <label onclick="trocaSabre('verde')">Mestre Yoda
+            <input type="radio" name="cor-do-sabre" id="Yoda" value="verde" /></label>
+        </div>
+
+        
+        <div class="area-opt">
+            <label onclick="trocaSabre('roxo')">Mestre Mace Windu
+                <input type="radio" name="cor-do-sabre" id="Mace" value="roxo" /></label>
+            </div>
+            <div class="area-opt">
+                <label onclick="trocaSabre('vermelho')">Darth Vader
+                <input type="radio" name="cor-do-sabre" id="Vader" value="vermelho" /></label>
+            </div>
+            
+        <div class="area-opt">
+            <label onclick="trocaSabre('preto')">O Sabre Negro
+            <input type="radio" name="cor-do-sabre" id="Mandaloriano" value="preto" /></label>
+        </div>
+    </section>
+    
+    <section class="Area-Sabre">
+    <img src="./midia/svg/sabre-obiwan.svg" id="sabre" alt="" />
+        <div id="luz" class="obi-wan"></div>
+    </section>
+    <script src="script.js"></script>
+</body>
+
+</html>
