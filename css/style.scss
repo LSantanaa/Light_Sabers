@@ -1,0 +1,180 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #3a3a3a;
+    height: 100vh;
+}
+
+section.Cores-Sabres {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+div.area-opt {
+    margin: 20px 20px 0px 20px;
+}
+
+label {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+    color: #f2f2f2;
+    padding-bottom: 10px;
+    cursor: pointer;
+    text-align: center;
+}
+
+input[type=radio] {
+    all: unset;
+    cursor: pointer;
+    display: block;
+    margin: 10px 30px 10px 10px;
+    background-color: #fff;
+    width: 25px;
+    height: 10px;
+    border-radius: 10px;
+    border: 0.5px black;
+}
+
+section.Area-Sabre {
+    width: 500px;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    //flex-direction: column-reverse;
+    position: relative;
+}
+
+section img{
+    width: 40px;
+    position: absolute;
+    top: 300px;
+    right: 234px;
+    z-index: 1;
+}
+
+div#luz {
+    transition: 200ms ease;
+    opacity: 0;
+    width: 0px;
+    height: 0px;
+    border-radius: 12px 12px 0px 0px;
+    transform: translateY(60px) translateX(0px);
+}
+
+input[type=radio]#Obi-wan:checked {
+    background: #EBFBFB;
+    box-shadow: 0px 0px 20px 8px #6693e0,
+        0px 0px 20px 9px #4c66c9;
+}
+
+input[type=radio]#Yoda:checked {
+    background: #FDFFF2;
+    box-shadow: 0px 0px 37px 10px #3b9538,
+    0px 0px 8px 7px #4bc649,
+}
+
+input[type=radio]#Mace:checked {
+    background: #FEEFFF;
+    box-shadow: 0px 0px 37px 10px #5A0270, 
+    0px 0px 17px 8px #C931DC, 
+}
+input[type=radio]#Vader:checked {
+    background-color: #fff;
+    box-shadow: 0px 4px 17px 8px #f70000,
+        0px 0px 6px 4px #ff7a7a;
+}
+
+input[type=radio]#Mandaloriano:checked {
+    background: #070C0F;
+    box-shadow: 0px 0px 20px 7px #D4DCDE, 
+    0px 0px 6px 4px #CFD0D4;
+}
+
+.ligado+div#luz {
+    height: 270px;
+    width: 20px;
+    opacity: 1;
+    transform: translateY(-70px) translateX(-1px);
+}
+
+.obi-wan{
+    background: #EBFBFB;
+    box-shadow: 0px 0px 20px 8px #6693e0,
+        0px 0px 20px 9px #4c66c9,
+        inset 0px 0px 5px 4px #8ECAFD;
+}
+.yoda{
+    right:  234px;
+    width:  40px;
+}
+.yoda-luz{
+    background: #FDFFF2;
+    box-shadow: 0px 0px 37px 10px #3b9538,
+    0px 0px 8px 7px #4bc649,
+    inset 0px 0px 8px 5px #53c94c;
+}
+.mace{
+    width: 35px;
+    right: 231px;
+}
+.mace-luz{
+    background: #FEEFFF;
+    box-shadow: 0px 0px 37px 10px #5A0270, 
+    0px 0px 17px 8px #C931DC, 
+    inset 0px 0px 6px 4px #F08CFC;
+}
+.vader{
+    right: auto;
+}
+.vader-luz{
+    background-color: #fff;
+    box-shadow: 0px 0px 17px 8px #f70000,
+        0px 0px 6px 4px #ff7a7a,
+        inset 0px 0px 3px 4px #FF9A97;
+}
+.darksaber{
+    width: 60px;
+    right: 220px;
+}
+.darksaber-luz{
+    width: 40px !important;
+    border-radius: 120px 9px 40px 86px !important;
+    background-color: #070C0F;
+    box-shadow: 0px 0px 20px 7px #D4DCDE, 
+    0px 0px 6px 4px #CFD0D4, 
+    inset 0px 0px 3px 4px #D4DCDE;
+
+}
+
+@media screen and (max-width: 960px) {
+   label{
+    font-size: 18px;
+
+   }
+}
+@media screen and (max-width: 520px) {
+    label{
+     font-size: 16px;
+    }
+    input[type=radio] {
+        margin: 5px;
+        width: 15px;
+        height: 10px;
+    }
+    div.area-opt {
+        margin: 10px 10px 0px 10px;
+    }
+ }
